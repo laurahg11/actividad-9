@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style type="text/css">
+		
+  h3 { color: black; font-family: "Century Gothic";
+		}
+		h1 { color: black; font-family: "Century Gothic";
+		}
+		p { color: black; font-family: "Century Gothic";
+		}
+		
+	.boton { border: none; background-color:black;
+		 color: white; font-family: "Century Gothic black";
+		padding: 14px 28px; 
+		font-size: 16px;
+		cursor: pointer; 
+		display: inline-block;
+		border-bottom-right-radius: 23px;
+		border-top-left-radius: 23px;
+		 transition-duration: 0.4s
+		
+			  }
+		
+		.boton:hover {
+			background-color: #EAEAEA;
+		color: #000000;}
+		
+  color: white;
+}
+		
+		
+		
+		#carga{align-content: center;
+    position:center;
+}
+#carga:before{
+	width:20px;
+	height:20px;
+	border-radius:20px;
+	background:#FF3457;
+	content:'';
+	position:absolute;
+	background:#9b59b6;
+	animation: carga_before 1.5s infinite ease-in-out;
+}
+#carga:after{ align-content: center;
+	width:20px;
+	height:20px;
+	border-radius:20px;
+	background:blue;
+	content:'';
+	position:absolute;
+	background:#2ecc71;
+	left:22px;
+	animation: carga_after 1.5s infinite ease-in-out;
+}
+@keyframes carga_before {
+    0% {transform: translateX(0px) rotate(0deg)}
+    50% {transform: translateX(50px) scale(1.2) rotate(260deg); background:#FF004D;border-radius:0px;}
+      100% {transform: translateX(0px) rotate(0deg)}
+}
+@keyframes carga_after {
+    0% {transform: translateX(0px)}
+    50% {transform: translateX(-50px) scale(1.2) rotate(-260deg);background:# #F46C2B;border-radius:0px;}
+  	100% {transform: translateX(0px)}
+}
+		 
+		@charset "utf-8";
+.tarjeta{
+	align-content: center;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:420px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  font-family: sans-serif;
+}
+.titulo{
+  font-size: 24px;
+  padding: 10px 10px 0 10px;;
+}
+.cuerpo{
+  padding: 10px;
+}
+.pie{
+ 
+background: #6699ff;
+  border-radius:0 0 15px 15px;
+  padding: 10px;
+  text-align:center;
+
+}
+.pie a{
+  text-decoration: none;
+  color: white;
+}
+.pie a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: ""
+}
+		
+		.tarjeta:hover {
+			background-color: #EAEAEA;
+		color: #000000;
+		 width: 300px;
+		}
+		
+  color: white;
+}
+
+		
+</style>
+</head>
+
+<body>
+	<h3 align="center">Bienvenido a</h3>
+	<div class="logo" align="center"> <img width="200" src="logo.png"></div>
+	<p></p>
+	
+
+
+		<h1 align= "center">Actividad 9</h1>
+	
+	
+	
+
+	<p align="center"><a href="boton"><button class="boton" style="align-content: center" >Hover me!</button></a></p>
+	
+	<p><div id="carga" align="center"></div>
+	<p></p></p><p></p><p></p><p></p>
+	
+	<p align="center">
+	<div class="tarjeta" align="center">
+<div class="titulo">Tarjeta </div>
+<div class="cuerpo">
+	<img src="estudio-foto.jpg" width="200" >
+
+</div>
+<div class="pie">
+  
+</div>
+</div></p>
+
+	
+
+	
+
+	
+	
+</body>
+</html>
